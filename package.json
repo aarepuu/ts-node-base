@@ -1,26 +1,29 @@
 {
-  "name": "@robb_j/create-ts-node",
+  "name": "@aarepuu/create-ts-node",
   "private": true,
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "robb-j/ts-node-base",
+  "repository": "aarepuu/ts-node-base",
   "author": "Rob Anderson (https://r0b.io)",
+  "contributors":["Aare Puussaar"],
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build-ts": "tsc",
+    "build": "npm run lint && npm run build-ts",
     "lint": "npx tsc --noEmit",
     "coverage": "jest --coverage",
     "preversion": "npm test -s && npm run build && git add dist",
     "prettier": "prettier --write '**/*.{js,ts,tsx,json,css,md}'",
     "start": "node -r dotenv/config dist/index.js",
     "test": "jest",
-    "dev": "NODE_ENV=development nodemon -w src -e ts -x 'npx ts-node -r dotenv/config' src/index.ts"
+    "dev": "NODE_ENV=development nodemon"
   },
   "keywords": [],
   "engines": {
-    "node": ">=8"
+    "node": "10.x.x",
+    "npm": "6.x.x"
   },
   "dependencies": {
     "dotenv": "^8.1.0"

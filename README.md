@@ -1,10 +1,7 @@
 # A Typescript Node Project
 
-This project was setup with [robb-j/ts-node-base](https://github.com/robb-j/ts-node-base/) which creates a node app, with the common things already setup for Typescript.
+This project was setup using [robb-j/ts-node-base](https://github.com/robb-j/ts-node-base/) which creates a node app, with the common things already setup for Typescript.
 
-> **Deprecated:** I now use [puggle](https://github.com/robb-j/puggle/)
-> and [puggle-presets](https://github.com/robb-j/puggle-presets/)
-> to bootstrap my projects
 
 ## Template Features
 
