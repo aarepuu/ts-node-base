@@ -2,7 +2,6 @@
 
 This project was setup using [robb-j/ts-node-base](https://github.com/robb-j/ts-node-base/) which creates a node app, with the common things already setup for Typescript.
 
-
 ## Template Features
 
 - Multi-stage docker build to install, test and deploy
